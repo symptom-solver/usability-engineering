@@ -1,3 +1,41 @@
+As the final segment of our SaMD project, we will delve into the crucial aspects of usability engineering as applied to Symptomsolver, our innovative medical software designed to enhance diagnostic accuracy and patient care. In this section, we ensure that Symptomsolver adheres to all usability principles stipulated by ISO 62366, emphasizing effectiveness, safety, and user satisfaction.
+
+Usability engineering entails designing intuitive and efficient products. For Symptomsolver, this translates into creating a user interface (UI) and user experience (UX) that facilitate accurate diagnosis and seamless interaction for healthcare providers. The development of Symptomsolver's UI/UX design incorporated extensive stakeholder feedback and observational studies. We emphasized minimizing cognitive load and ensuring usability across different environments and user skill levels during testing sessions with representative users. Testing protocols included measuring functional errors and assessing user satisfaction.
+
+Integration of usability engineering with risk management practices is pivotal. We identified and analyzed hazards associated with Symptomsolver's UI interactions using methods such as Failure Mode and Effects Analysis (FMEA). Subsequently, we implemented design improvements to mitigate identified risks effectively. Our approach is aligned with ISO 62366 standards, ensuring that all usability activities meet stringent regulatory requirements for medical software.
+
+Post-market surveillance remains integral to Symptomsolver's lifecycle management. It enables continuous gathering of user feedback and monitoring of usability issues in real-world clinical and medical settings, facilitating ongoing refinement and enhancement of the software.
+
+By placing a strategic emphasis on usability engineering, Symptomsolver not only enhances diagnostic accuracy and user satisfaction but also mitigates potential usability-related risks in healthcare settings. Our steadfast commitment to delivering safe, effective, and user-friendly medical software solutions is exemplified through Symptomsolver's adherence to ISO 62366 standards.
+
+Detailed Insights into Usability Testing Processes for Symptomsolver
+Use Specification
+The USE SPECIFICATION for Symptomsolver, prepared in accordance with IEC 62366 chapter 5.1, includes the following elements:
+
+Intended Medical Indication:
+
+Symptomsolver is designed to screen and diagnose infectious diseases, such as COVID-19, flu, common cold, bronchitis, and RSV, based on user-reported symptoms.
+Intended Patient Population:
+
+Age Group: All age groups (children, adults, elderly).
+Health Condition: Patients experiencing symptoms related to the aforementioned infectious diseases.
+Weight Range: No specific weight range; applicable to all individuals.
+Intended Part of the Body or Type of Tissue Applied to or Interacted With:
+
+As Symptomsolver is a software application, interaction is with the user interface rather than a specific body part.
+Intended User Profile:
+
+Users: General public, including patients and healthcare providers.
+Skills: Basic knowledge of operating a mobile device or computer; no specialized medical knowledge required.
+Use Environment:
+
+Environment: Usable in home settings, clinics, and hospitals.
+Conditions: Accessible via mobile device or computer with internet connectivity.
+Operating Principle:
+
+The user inputs symptoms into the application, and Symptomsolver calculates the probabilities of different diseases based on predefined symptom-disease correlations. The result is presented as the most probable disease.
+Plan for Usability Tests
+Selection of Processes to be Tested:
 Symptom Input: Testing the ease with which users can input their symptoms.
 Reason: High probability of error if the input process is not intuitive, leading to incorrect diagnoses.
 Result Interpretation: Testing whether users can easily understand and interpret the diagnosis results provided by Symptomsolver.
