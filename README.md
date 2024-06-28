@@ -3,7 +3,7 @@
 Welcome to the SymptomSolver project documentation repository.
 
 ## Introduction
-This repository contains the documentation for the SymptomSolver project, including detailed usability engineering reports, risk management strategies, and quality management systems.
+This repository contains the documentation for the SymptomSolver project, including detailed usability engineering reports.
 
 ## Contents
 - [Documentation](Usability Engineering Report for Symptomsolver - Part 1.docx)
