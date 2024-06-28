@@ -1,0 +1,51 @@
+Symptom Input: Testing the ease with which users can input their symptoms.
+Reason: High probability of error if the input process is not intuitive, leading to incorrect diagnoses.
+Result Interpretation: Testing whether users can easily understand and interpret the diagnosis results provided by Symptomsolver.
+Reason: Critical for user satisfaction and correct subsequent actions based on diagnosis.
+Description of the Tests:
+
+Structure:
+Symptom Input Test: Users will be asked to input a set of symptoms into the application.
+Result Interpretation Test: Users will be presented with a diagnosis result and asked to interpret it.
+Selection of Testers:
+Symptom Input Test: 5 users from different age groups and technical backgrounds.
+Result Interpretation Test: 5 users from the intended patient population.
+Procedure:
+Symptom Input Test:
+Provide users with a list of symptoms to input.
+Observe and record the time taken and any difficulties encountered.
+Result Interpretation Test:
+Present users with a sample diagnosis result.
+Ask users to explain their understanding of the result.
+Record their interpretations and any confusion or errors.
+Criteria for Passing the Tests:
+
+Symptom Input Test: 90% of users should be able to input symptoms correctly without assistance.
+Result Interpretation Test: 90% of users should correctly interpret the diagnosis result.
+Summative Usability Test
+Testing with Actual Product or Prototype:
+
+Prototype: Testing will be conducted using a functional prototype of the Symptomsolver application.
+Testers:
+
+Number of Testers: 2 users who are not part of the development team.
+Protocol of the Usability Test:
+
+Symptom Input Test Protocol:
+
+Objective: To evaluate the ease of inputting symptoms.
+Participants: 2 users.
+Procedure: Users will be given a list of symptoms to input into the application. Observers will note the time taken and any issues faced.
+Data Collection: Time taken, errors made, user feedback.
+Results: Document the findings, analyze the data, and identify areas for improvement.
+Result Interpretation Test Protocol:
+
+Objective: To evaluate the clarity of the diagnosis result.
+Participants: 2 users.
+Procedure: Users will be shown a sample diagnosis result and asked to explain it. Observers will note their understanding and any confusion.
+Data Collection: User interpretations, errors in understanding, user feedback.
+Results: Document the findings, analyze the data, and identify areas for improvement.
+Filing Results:
+
+The results of the usability tests will be documented and filed according to the QM system. This includes the test protocols, user feedback, data collected, analysis, and identified improvements.
+In summary, by adhering to the principles of usability engineering as per ISO 62366, Symptomsolver is poised to deliver a user-friendly, safe, and effective diagnostic tool for patients and healthcare providers. Our rigorous approach to usability testing ensures that the software meets high standards of functionality and user satisfaction, ultimately enhancing patient care and diagnostic accuracy.
