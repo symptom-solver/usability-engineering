@@ -1,73 +1,76 @@
-## 7. Detailed Technical Architecture
+## Usability Engineering for Symptomsolver
 
-This section outlines the technical architecture of the Symptomsolver project, ensuring compliance with IEC 62304 and integrating key elements such as system components, data flow, integration, and security mechanisms.
+This section details the usability engineering process for Symptomsolver, ensuring compliance with ISO 62366 and focusing on user satisfaction, effectiveness, and safety.
 
-### System Components and Architecture
+### Use Specification
 
-**Frontend Web Application:**
-- **Framework:** Developed using React.js.
-- **Functionality:** Enables symptom input and displays diagnoses and warnings.
-- **Design:** Responsive and accessible across devices.
+**Intended Medical Indication:**
+- Screen and diagnose infectious diseases like COVID-19, flu, common cold, bronchitis, and RSV based on symptoms.
 
-**Backend System:**
-- **Framework:** Implemented with Node.js and Express.
-- **Functionality:** Processes symptoms to identify potential diseases.
-- **Data Storage:** Utilizes MongoDB.
+**Intended Patient Population:**
+- All age groups (children, adults, elderly) experiencing relevant symptoms.
 
-**Infrastructure as Code (IaC):**
-- **Tools:** Managed with Terraform on AWS for consistent deployments.
+**Intended Part of the Body or Type of Tissue:**
+- Interaction is with the software interface, not a specific body part.
 
-### Data Flow and Integration
+**Intended User Profile:**
+- General public, including patients and healthcare providers.
+- Basic knowledge of using mobile devices or computers.
 
-**Data Flow:**
-- **User Input:** Via the frontend.
-- **Data Processing:** Backend processes input through RESTful APIs.
-- **Diagnosis:** Results displayed on the frontend.
+**Use Environment:**
+- Usable in home, clinic, and hospital settings.
+- Accessible via mobile devices or computers with internet connectivity.
 
-**Integration:**
-- **APIs:** RESTful communication between frontend and backend.
-- **CI/CD:** Automated with Jenkins for seamless updates.
+**Operating Principle:**
+- Users input symptoms, and the software calculates the probabilities of various diseases, presenting the most likely diagnosis.
 
-### Security Mechanisms
+### Usability Testing Plan
 
-**Data Encryption:**
-- **At Rest:** AES-256 encryption.
-- **In Transit:** TLS 1.2 or higher.
+**Processes to be Tested:**
+1. **Symptom Input:**
+   - Ensures users can easily input symptoms.
+   - Critical for accurate data collection and diagnosis.
+2. **Result Interpretation:**
+   - Ensures users can understand and act on diagnosis results.
+   - Essential for user satisfaction and appropriate response.
 
-**Authentication:**
-- **MFA:** Multi-Factor Authentication.
-- **Access Control:** Role-based access.
+**Description of Tests:**
+- **Symptom Input Test:**
+  - Users input a set of symptoms.
+  - Observers note time taken and any difficulties.
+- **Result Interpretation Test:**
+  - Users interpret a sample diagnosis result.
+  - Observers record user understanding and any confusion.
 
-**Security Audits:**
-- **Regular Audits:** Quarterly security audits and penetration tests.
+**Passing Criteria:**
+- **Symptom Input:** 90% of users input symptoms correctly without assistance.
+- **Result Interpretation:** 90% of users correctly interpret the diagnosis result.
 
-### Documentation and Compliance
+### Summative Usability Test
 
-**Traceability Matrix:**
-- **Requirement Mapping:** Links requirements to tests for compliance verification.
+**Testing with Actual Product or Prototype:**
+- Conducted with a functional prototype.
 
-**Configuration Management:**
-- **Version Control:** Git with semantic versioning.
-- **Artifact Repository:** JFrog Artifactory for version tracking.
+**Testers:**
+- At least 2 users not part of the development team.
 
-**Safety and Risk Management:**
-- **Risk Assessment:** Regular assessments with mitigation strategies.
-- **Compliance:** Adheres to IEC 62304 standards.
+**Test Protocol:**
+- **Symptom Input Test:**
+  1. Users input a list of symptoms.
+  2. Observers record time and issues.
+  3. Analyze data and identify improvements.
+- **Result Interpretation Test:**
+  1. Users interpret a diagnosis result.
+  2. Observers note understanding and confusion.
+  3. Document findings and suggest improvements.
 
-### Connecting to the Software Lifecycle
+### Conclusion
 
-The detailed technical architecture is integral to the entire software lifecycle, ensuring each phase is interconnected and compliant with IEC 62304:
+The usability engineering process for Symptomsolver ensures that the software is intuitive, effective, and safe for users, complying with ISO 62366 standards. This approach enhances diagnostic accuracy and user satisfaction, contributing to the overall quality and reliability of the software.
 
-- **Planning:** The architecture informs the initial planning phase, ensuring all components and interactions are considered from the start.
-- **Requirements Analysis:** Architectural components are derived from detailed requirements, ensuring all functional and non-functional needs are met.
-- **Design Phases:** The high-level and detailed designs are based on the architecture, ensuring consistent implementation across the project.
-- **Implementation and Verification:** Each component is implemented according to the architectural specifications and verified to ensure compliance and functionality.
-- **Integration and Testing:** The architecture guides the integration of components, with continuous testing to verify interactions and performance.
-- **System Testing:** Overall system tests ensure that the integrated components function as intended within the architectural framework.
-- **Software Release:** The final release is based on the fully integrated and tested architecture, ensuring a robust and reliable product.
-- **Maintenance:** The architecture provides a foundation for ongoing maintenance and updates, ensuring any changes are systematically integrated and tested.
 
-By embedding the detailed technical architecture within the software lifecycle, Symptomsolver achieves a cohesive and compliant development process, ensuring high standards of quality and performance throughout the project.
+
+
 ## Usability Test for Symptomsolver
 
 ### Objective
