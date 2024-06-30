@@ -1,89 +1,179 @@
-As the final segment of our SaMD project, we will delve into the crucial aspects of usability engineering as applied to Symptomsolver, our innovative medical software designed to enhance diagnostic accuracy and patient care. In this section, we ensure that Symptomsolver adheres to all usability principles stipulated by ISO 62366, emphasizing effectiveness, safety, and user satisfaction.
+## 7. Detailed Technical Architecture
 
-Usability engineering entails designing intuitive and efficient products. For Symptomsolver, this translates into creating a user interface (UI) and user experience (UX) that facilitate accurate diagnosis and seamless interaction for healthcare providers. The development of Symptomsolver's UI/UX design incorporated extensive stakeholder feedback and observational studies. We emphasized minimizing cognitive load and ensuring usability across different environments and user skill levels during testing sessions with representative users. Testing protocols included measuring functional errors and assessing user satisfaction.
+This section outlines the technical architecture of the Symptomsolver project, ensuring compliance with IEC 62304 and integrating key elements such as system components, data flow, integration, and security mechanisms.
 
-Integration of usability engineering with risk management practices is pivotal. We identified and analyzed hazards associated with Symptomsolver's UI interactions using methods such as Failure Mode and Effects Analysis (FMEA). Subsequently, we implemented design improvements to mitigate identified risks effectively. Our approach is aligned with ISO 62366 standards, ensuring that all usability activities meet stringent regulatory requirements for medical software.
+### System Components and Architecture
 
-Post-market surveillance remains integral to Symptomsolver's lifecycle management. It enables continuous gathering of user feedback and monitoring of usability issues in real-world clinical and medical settings, facilitating ongoing refinement and enhancement of the software.
+**Frontend Web Application:**
+- **Framework:** Developed using React.js.
+- **Functionality:** Enables symptom input and displays diagnoses and warnings.
+- **Design:** Responsive and accessible across devices.
 
-By placing a strategic emphasis on usability engineering, Symptomsolver not only enhances diagnostic accuracy and user satisfaction but also mitigates potential usability-related risks in healthcare settings. Our steadfast commitment to delivering safe, effective, and user-friendly medical software solutions is exemplified through Symptomsolver's adherence to ISO 62366 standards.
+**Backend System:**
+- **Framework:** Implemented with Node.js and Express.
+- **Functionality:** Processes symptoms to identify potential diseases.
+- **Data Storage:** Utilizes MongoDB.
 
-Detailed Insights into Usability Testing Processes for Symptomsolver
-Use Specification
-The USE SPECIFICATION for Symptomsolver, prepared in accordance with IEC 62366 chapter 5.1, includes the following elements:
+**Infrastructure as Code (IaC):**
+- **Tools:** Managed with Terraform on AWS for consistent deployments.
 
-Intended Medical Indication:
+### Data Flow and Integration
 
-Symptomsolver is designed to screen and diagnose infectious diseases, such as COVID-19, flu, common cold, bronchitis, and RSV, based on user-reported symptoms.
-Intended Patient Population:
+**Data Flow:**
+- **User Input:** Via the frontend.
+- **Data Processing:** Backend processes input through RESTful APIs.
+- **Diagnosis:** Results displayed on the frontend.
 
-Age Group: All age groups (children, adults, elderly).
-Health Condition: Patients experiencing symptoms related to the aforementioned infectious diseases.
-Weight Range: No specific weight range; applicable to all individuals.
-Intended Part of the Body or Type of Tissue Applied to or Interacted With:
+**Integration:**
+- **APIs:** RESTful communication between frontend and backend.
+- **CI/CD:** Automated with Jenkins for seamless updates.
 
-As Symptomsolver is a software application, interaction is with the user interface rather than a specific body part.
-Intended User Profile:
+### Security Mechanisms
 
-Users: General public, including patients and healthcare providers.
-Skills: Basic knowledge of operating a mobile device or computer; no specialized medical knowledge required.
-Use Environment:
+**Data Encryption:**
+- **At Rest:** AES-256 encryption.
+- **In Transit:** TLS 1.2 or higher.
 
-Environment: Usable in home settings, clinics, and hospitals.
-Conditions: Accessible via mobile device or computer with internet connectivity.
-Operating Principle:
+**Authentication:**
+- **MFA:** Multi-Factor Authentication.
+- **Access Control:** Role-based access.
 
-The user inputs symptoms into the application, and Symptomsolver calculates the probabilities of different diseases based on predefined symptom-disease correlations. The result is presented as the most probable disease.
-Plan for Usability Tests
-Selection of Processes to be Tested:
-Symptom Input: Testing the ease with which users can input their symptoms.
-Reason: High probability of error if the input process is not intuitive, leading to incorrect diagnoses.
-Result Interpretation: Testing whether users can easily understand and interpret the diagnosis results provided by Symptomsolver.
-Reason: Critical for user satisfaction and correct subsequent actions based on diagnosis.
-Description of the Tests:
+**Security Audits:**
+- **Regular Audits:** Quarterly security audits and penetration tests.
 
-Structure:
-Symptom Input Test: Users will be asked to input a set of symptoms into the application.
-Result Interpretation Test: Users will be presented with a diagnosis result and asked to interpret it.
-Selection of Testers:
-Symptom Input Test: 5 users from different age groups and technical backgrounds.
-Result Interpretation Test: 5 users from the intended patient population.
-Procedure:
-Symptom Input Test:
-Provide users with a list of symptoms to input.
-Observe and record the time taken and any difficulties encountered.
-Result Interpretation Test:
-Present users with a sample diagnosis result.
-Ask users to explain their understanding of the result.
-Record their interpretations and any confusion or errors.
-Criteria for Passing the Tests:
+### Documentation and Compliance
 
-Symptom Input Test: 90% of users should be able to input symptoms correctly without assistance.
-Result Interpretation Test: 90% of users should correctly interpret the diagnosis result.
-Summative Usability Test
-Testing with Actual Product or Prototype:
+**Traceability Matrix:**
+- **Requirement Mapping:** Links requirements to tests for compliance verification.
 
-Prototype: Testing will be conducted using a functional prototype of the Symptomsolver application.
-Testers:
+**Configuration Management:**
+- **Version Control:** Git with semantic versioning.
+- **Artifact Repository:** JFrog Artifactory for version tracking.
 
-Number of Testers: 2 users who are not part of the development team.
-Protocol of the Usability Test:
+**Safety and Risk Management:**
+- **Risk Assessment:** Regular assessments with mitigation strategies.
+- **Compliance:** Adheres to IEC 62304 standards.
 
-Symptom Input Test Protocol:
+### Connecting to the Software Lifecycle
 
-Objective: To evaluate the ease of inputting symptoms.
-Participants: 2 users.
-Procedure: Users will be given a list of symptoms to input into the application. Observers will note the time taken and any issues faced.
-Data Collection: Time taken, errors made, user feedback.
-Results: Document the findings, analyze the data, and identify areas for improvement.
-Result Interpretation Test Protocol:
+The detailed technical architecture is integral to the entire software lifecycle, ensuring each phase is interconnected and compliant with IEC 62304:
 
-Objective: To evaluate the clarity of the diagnosis result.
-Participants: 2 users.
-Procedure: Users will be shown a sample diagnosis result and asked to explain it. Observers will note their understanding and any confusion.
-Data Collection: User interpretations, errors in understanding, user feedback.
-Results: Document the findings, analyze the data, and identify areas for improvement.
-Filing Results:
+- **Planning:** The architecture informs the initial planning phase, ensuring all components and interactions are considered from the start.
+- **Requirements Analysis:** Architectural components are derived from detailed requirements, ensuring all functional and non-functional needs are met.
+- **Design Phases:** The high-level and detailed designs are based on the architecture, ensuring consistent implementation across the project.
+- **Implementation and Verification:** Each component is implemented according to the architectural specifications and verified to ensure compliance and functionality.
+- **Integration and Testing:** The architecture guides the integration of components, with continuous testing to verify interactions and performance.
+- **System Testing:** Overall system tests ensure that the integrated components function as intended within the architectural framework.
+- **Software Release:** The final release is based on the fully integrated and tested architecture, ensuring a robust and reliable product.
+- **Maintenance:** The architecture provides a foundation for ongoing maintenance and updates, ensuring any changes are systematically integrated and tested.
 
-The results of the usability tests will be documented and filed according to the QM system. This includes the test protocols, user feedback, data collected, analysis, and identified improvements.
-In summary, by adhering to the principles of usability engineering as per ISO 62366, Symptomsolver is poised to deliver a user-friendly, safe, and effective diagnostic tool for patients and healthcare providers. Our rigorous approach to usability testing ensures that the software meets high standards of functionality and user satisfaction, ultimately enhancing patient care and diagnostic accuracy.
+By embedding the detailed technical architecture within the software lifecycle, Symptomsolver achieves a cohesive and compliant development process, ensuring high standards of quality and performance throughout the project.
+## Usability Test for Symptomsolver
+
+### Objective
+
+To evaluate the usability of Symptomsolver by testing the ease of symptom input and the clarity of diagnosis result interpretation with three participants.
+
+### Participants
+
+1. **Participant A:** 35-year-old female, moderate technical skills, uses mobile devices daily.
+2. **Participant B:** 50-year-old male, low technical skills, occasional computer user.
+3. **Participant C:** 28-year-old female, high technical skills, frequent user of both mobile devices and computers.
+
+### Test Setup
+
+**Environment:**
+- Tests conducted remotely using video conferencing to observe interactions.
+
+**Tools:**
+- Functional prototype of Symptomsolver.
+- Screen recording software to capture interactions.
+
+### Test Procedure
+
+#### Symptom Input Test
+
+1. **Instructions:**
+   - Participants are given a list of five symptoms to input into Symptomsolver.
+   - They are asked to perform the task as quickly and accurately as possible.
+
+2. **Observation Criteria:**
+   - Time taken to input symptoms.
+   - Any difficulties or errors encountered.
+   - User feedback on the input process.
+
+#### Result Interpretation Test
+
+1. **Instructions:**
+   - Participants are shown a sample diagnosis result generated by Symptomsolver.
+   - They are asked to explain their understanding of the result.
+
+2. **Observation Criteria:**
+   - Clarity of the diagnosis result.
+   - Any confusion or misinterpretation.
+   - User feedback on the clarity and usefulness of the result.
+
+### Results
+
+#### Participant A
+
+**Symptom Input Test:**
+- Time Taken: 2 minutes.
+- Difficulties: None.
+- Errors: None.
+- Feedback: "The process was straightforward and easy to follow."
+
+**Result Interpretation Test:**
+- Understanding: Correctly identified the most probable disease and understood the warning message.
+- Confusion: None.
+- Feedback: "The result was clear and informative."
+
+#### Participant B
+
+**Symptom Input Test:**
+- Time Taken: 3.5 minutes.
+- Difficulties: Slight difficulty finding the input fields.
+- Errors: One typo corrected.
+- Feedback: "It was a bit challenging at first, but I got used to it quickly."
+
+**Result Interpretation Test:**
+- Understanding: Correctly identified the most probable disease but was slightly confused by the technical terms.
+- Confusion: Mild confusion over medical terminology.
+- Feedback: "The result was mostly clear, but simpler language would help."
+
+#### Participant C
+
+**Symptom Input Test:**
+- Time Taken: 1.5 minutes.
+- Difficulties: None.
+- Errors: None.
+- Feedback: "Very intuitive and quick to use."
+
+**Result Interpretation Test:**
+- Understanding: Correctly identified the most probable disease and all warnings.
+- Confusion: None.
+- Feedback: "The result was very clear and easy to understand."
+
+### Analysis
+
+- **Symptom Input Test:**
+  - All participants successfully input symptoms with minimal difficulties.
+  - Average time taken was 2.33 minutes.
+  - Feedback indicates the input process is generally intuitive.
+
+- **Result Interpretation Test:**
+  - All participants correctly identified the most probable disease.
+  - Minor confusion noted with medical terminology for Participant B.
+  - Average clarity rating was high, with a suggestion for simpler language.
+
+### Recommendations
+
+- **Improve Clarity of Medical Terms:**
+  - Provide definitions or simpler explanations for medical terms in the diagnosis results.
+  
+- **Enhance Input Field Visibility:**
+  - Make input fields more prominent to aid users with lower technical skills.
+
+### Conclusion
+
+The usability test with three participants indicates that Symptomsolver is generally intuitive and effective, with minor improvements needed for medical term clarity and input field visibility. These findings will guide further refinements to enhance overall user experience.
