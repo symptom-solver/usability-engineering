@@ -46,10 +46,21 @@ A diverse group of representative users, including healthcare providers of varyi
 Simulated clinical settings that mimic real-world environments.
 
 ### Tasks:
-Specific tasks that users will perform to evaluate different aspects of the software.
+Participants will perform the following specific tasks to evaluate different aspects of the software:
+1. **Symptom Input:**
+   - Task: Enter a set of symptoms into the system.
+   - Purpose: Assess ease of symptom input.
+2. **Diagnosis Retrieval:**
+   - Task: Retrieve and review the diagnosis based on the entered symptoms.
+   - Purpose: Evaluate the clarity and accuracy of the diagnosis result.
+3. **Interpretation of Warnings:**
+   - Task: Read and understand static and dynamic warning messages.
+   - Purpose: Ensure users can comprehend important safety information.
 
 ### Metrics:
-Functional errors, task completion times, and user satisfaction ratings.
+- **Functional Errors:** Number and types of errors encountered during tasks.
+- **Task Completion Times:** Time taken to complete each task.
+- **User Satisfaction Ratings:** User feedback on the usability and clarity of the software.
 
 ## Summative Usability Test
 A summative usability test was conducted as a practical part of this project:
@@ -58,88 +69,10 @@ A summative usability test was conducted as a practical part of this project:
 To gather quantitative and qualitative data on the usability of Symptomsolver.
 
 ### Methodology:
-Users performed a series of tasks under observation and their interactions were recorded and analyzed.
+Users performed the specific tasks outlined in the usability testing plan under observation. Their interactions were recorded and analyzed.
 
 ### Results:
 The results indicated areas of strength and opportunities for improvement, which informed subsequent design iterations.
-
-## Conclusion
-By placing a strategic emphasis on usability engineering, Symptomsolver not only enhances diagnostic accuracy and user satisfaction but also mitigates potential usability-related risks in healthcare settings. Our steadfast commitment to delivering safe, effective, and user-friendly medical software solutions is exemplified through Symptomsolver's adherence to ISO 62366 standards.
-
-**END OF PART 1**
-
-## Usability Engineering for Symptomsolver
-
-This section details the usability engineering process for Symptomsolver, ensuring compliance with ISO 62366 and focusing on user satisfaction, effectiveness, and safety.
-
-### Use Specification
-
-**Intended Medical Indication:**
-- Screen and diagnose infectious diseases like COVID-19, flu, common cold, bronchitis, and RSV based on symptoms.
-
-**Intended Patient Population:**
-- All age groups (children, adults, elderly) experiencing relevant symptoms.
-
-**Intended Part of the Body or Type of Tissue:**
-- Interaction is with the software interface, not a specific body part.
-
-**Intended User Profile:**
-- General public, including patients and healthcare providers.
-- Basic knowledge of using mobile devices or computers.
-
-**Use Environment:**
-- Usable in home, clinic, and hospital settings.
-- Accessible via mobile devices or computers with internet connectivity.
-
-**Operating Principle:**
-- Users input symptoms, and the software calculates the probabilities of various diseases, presenting the most likely diagnosis.
-
-### Usability Testing Plan
-
-**Processes to be Tested:**
-1. **Symptom Input:**
-   - Ensures users can easily input symptoms.
-   - Critical for accurate data collection and diagnosis.
-2. **Result Interpretation:**
-   - Ensures users can understand and act on diagnosis results.
-   - Essential for user satisfaction and appropriate response.
-
-**Description of Tests:**
-- **Symptom Input Test:**
-  - Users input a set of symptoms.
-  - Observers note time taken and any difficulties.
-- **Result Interpretation Test:**
-  - Users interpret a sample diagnosis result.
-  - Observers record user understanding and any confusion.
-
-**Passing Criteria:**
-- **Symptom Input:** 90% of users input symptoms correctly without assistance.
-- **Result Interpretation:** 90% of users correctly interpret the diagnosis result.
-
-### Summative Usability Test
-
-**Testing with Actual Product or Prototype:**
-- Conducted with a functional prototype.
-
-**Testers:**
-- At least 2 users not part of the development team.
-
-**Test Protocol:**
-- **Symptom Input Test:**
-  1. Users input a list of symptoms.
-  2. Observers record time and issues.
-  3. Analyze data and identify improvements.
-- **Result Interpretation Test:**
-  1. Users interpret a diagnosis result.
-  2. Observers note understanding and confusion.
-  3. Document findings and suggest improvements.
-
-### Conclusion
-
-The usability engineering process for Symptomsolver ensures that the software is intuitive, effective, and safe for users, complying with ISO 62366 standards. This approach enhances diagnostic accuracy and user satisfaction, contributing to the overall quality and reliability of the software.
-
-
-
 
 ## Usability Test for Symptomsolver
 
@@ -250,3 +183,9 @@ To evaluate the usability of Symptomsolver by testing the ease of symptom input 
 ### Conclusion
 
 The usability test with three participants indicates that Symptomsolver is generally intuitive and effective, with minor improvements needed for medical term clarity and input field visibility. These findings will guide further refinements to enhance overall user experience.
+
+By placing a strategic emphasis on usability engineering, Symptomsolver not only enhances diagnostic accuracy and user satisfaction but also mitigates potential usability-related risks in healthcare settings. Our steadfast commitment to delivering safe, effective, and user-friendly medical software solutions is exemplified through Symptomsolver's adherence to ISO 62366 standards.
+
+### Conclusive Statement
+
+Based on the summative usability tests and subsequent analysis, no unacceptable usability risks remain. The criteria defined for passing the usability tests have been met, ensuring that Symptomsolver is both safe and effective for end-users.
