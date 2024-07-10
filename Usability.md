@@ -1,16 +1,44 @@
-# Usability Engineering Report for Symptomsolver
+# Usability Engineering Report for SymptomSolver
 
 ## Introduction
-As the final segment of our SaMD project, we will delve into the crucial aspects of usability engineering as applied to Symptomsolver, our innovative medical software designed to enhance diagnostic accuracy and patient care. In this section, we ensure that Symptomsolver adheres to all usability principles stipulated by ISO 62366, emphasizing effectiveness, safety, and user satisfaction.
+As the final segment of our SaMD project, we will delve into the crucial aspects of usability engineering as applied to SymptomSolver, our innovative medical software designed to enhance diagnostic accuracy and patient care. In this section, we ensure that SymptomSolver adheres to all usability principles stipulated by ISO 62366, emphasizing effectiveness, safety, and user satisfaction. One of the most important aspects that made our final product exactly as we envisioned was the entire team working together and supervising each step, embodying the principle of considering usability engineering in both design and implementation.
 
 ## Usability Engineering Principles
-Usability engineering entails designing intuitive and efficient products. For Symptomsolver, this translates into creating a user interface (UI) and user experience (UX) that facilitate accurate diagnosis and seamless interaction for healthcare providers. The development of Symptomsolver's UI/UX design incorporated extensive stakeholder feedback and observational studies. We emphasized minimizing cognitive load and ensuring usability across different environments and user skill levels during testing sessions with representative users. Testing protocols included measuring functional errors and assessing user satisfaction.
+Usability engineering entails designing intuitive and efficient products. For SymptomSolver, this translates into creating a user interface (UI) and user experience (UX) that facilitate accurate diagnosis and seamless interaction for healthcare providers. The development of SymptomSolver's UI/UX design incorporated extensive stakeholder feedback and observational studies. We emphasized minimizing cognitive load and ensuring usability across different environments and user skill levels during testing sessions with representative users. Testing protocols included measuring functional errors and assessing user satisfaction.
+
+Usability, as defined by ISO 9241-11 and IEC 62366, refers to how well a product can be used by specific users to achieve goals with effectiveness, efficiency, and satisfaction in the intended environment. In designing SymptomSolver, we focused on these usability principles to ensure healthcare providers can diagnose symptoms accurately and efficiently. We engaged users throughout the design process, conducted extensive usability testing, and iterated on feedback to refine the interface. This approach ensures that SymptomSolver is intuitive, effective, and reliable, meeting high standards for medical software.
+
+- **Is the usage of a product understandable?**
+  - SymptomSolver's interface is designed to be intuitive and straightforward, ensuring that healthcare providers can easily understand how to use it for diagnosing symptoms.
+- **Is the usage simple?**
+  - The design of SymptomSolver emphasizes simplicity, allowing users to navigate and interact with the software efficiently without unnecessary complexity.
+- **Is the usage practical in the intended environment?**
+  - SymptomSolver is accessible from all smartphones and computers, making it practical for use in various environments with a responsive and adaptable design.
+
+## Why Usability Engineering for SymptomSolver?
+Usability engineering ensures SymptomSolver meets user needs effectively, minimizes the risk of errors in diagnosis, and complies with regulatory requirements. Good usability reduces the rate of use errors and ensures safety from the beginning of the project. We chose diseases that do not cause death under normal circumstances and emphasized messaging that advises patients to seek professional medical consultation. Gathering feedback from stakeholders confirmed the safety and usability of SymptomSolver.
+
+- **Usability**: The characteristic of the user interface that facilitates use and thereby establishes effectiveness, efficiency, and user satisfaction in the intended use environment (IEC 62366).
+
+## Legal Compliance
+In developing SymptomSolver, we meticulously addressed usability engineering to ensure compliance with European regulations such as the Medical Device Regulation (MDR) and the In Vitro Diagnostic Medical Devices Regulation (IVDR). This approach guarantees that SymptomSolver not only meets stringent usability standards but also aligns with legal requirements governing medical software in Germany and across Europe.
+
+### Regulatory Standards
+- **ISO 9241**: Ergonomics of human-system interaction.
+- **EN/IEC 62366**: Application of usability engineering to medical devices.
+- **IEC 61010-1-6**: Medical electrical equipment - General requirements for basic safety and essential performance - Collateral standard: Usability.
+- **IEC 62366 / 2021**: Harmonized with MDR and IVDR, covering design considerations and usage instructions.
+
+### Post-Market Surveillance
+Data gathered by the manufacturer's post-market surveillance system is used to identify options to improve the usability, performance, and safety of the device. This continuous improvement ensures that usability engineering activities are maintained even after the product is on the market.
 
 ## Integration with Risk Management
-Integration of usability engineering with risk management practices is pivotal. We identified and analyzed hazards associated with Symptomsolver's UI interactions using methods such as Failure Mode and Effects Analysis (FMEA). Subsequently, we implemented design improvements to mitigate identified risks effectively. Our approach is aligned with ISO 62366 standards, ensuring that all usability activities meet stringent regulatory requirements for medical software.
+The integration of usability engineering with risk management practices is pivotal. We identified and analyzed hazards associated with SymptomSolver's UI interactions using methods such as Failure Mode and Effects Analysis (FMEA). Subsequently, we implemented design improvements to mitigate identified risks effectively. Our approach aligns with ISO 62366 standards, ensuring that all usability activities meet stringent regulatory requirements for medical software.
 
-## Post-Market Surveillance
-Post-market surveillance remains integral to Symptomsolver's lifecycle management. It enables continuous gathering of user feedback and monitoring of usability issues in real-world clinical and medical settings, facilitating ongoing refinement and enhancement of the software.
+- **62366 specifies a process** to handle usability of medical devices related to safety, assessing and mitigating risks associated with correct use and use errors.
+
+The usability engineering process according to IEC 62366 is essentially a risk management process for user interfaces, considering intended use or inadvertent misuse, but not intentional misuse (unlike ISO 14971, which covers foreseeable intentional misuse).
+
 
 ## Use Specification (IEC 62366 Chapter 5.1)
 The USE SPECIFICATION prepared for Symptomsolver includes:
