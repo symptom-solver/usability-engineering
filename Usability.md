@@ -18,7 +18,6 @@ Usability, as defined by ISO 9241-11 and IEC 62366, refers to how well a product
 ## Why Usability Engineering for SymptomSolver?
 Usability engineering ensures SymptomSolver meets user needs effectively, minimizes the risk of errors in diagnosis, and complies with regulatory requirements. Good usability reduces the rate of use errors and ensures safety from the beginning of the project. We chose diseases that do not cause death under normal circumstances and emphasized messaging that advises patients to seek professional medical consultation. Gathering feedback from stakeholders confirmed the safety and usability of SymptomSolver.
 
-- **Usability**: The characteristic of the user interface that facilitates use and thereby establishes effectiveness, efficiency, and user satisfaction in the intended use environment (IEC 62366).
 
 ## Legal Compliance
 In developing SymptomSolver, we meticulously addressed usability engineering to ensure compliance with European regulations such as the Medical Device Regulation (MDR) and the In Vitro Diagnostic Medical Devices Regulation (IVDR). This approach guarantees that SymptomSolver not only meets stringent usability standards but also aligns with legal requirements governing medical software in Germany and across Europe.
