@@ -22,11 +22,6 @@ Usability engineering ensures SymptomSolver meets user needs effectively, minimi
 ## Legal Compliance
 In developing SymptomSolver, we meticulously addressed usability engineering to ensure compliance with European regulations such as the Medical Device Regulation (MDR) and the In Vitro Diagnostic Medical Devices Regulation (IVDR). This approach guarantees that SymptomSolver not only meets stringent usability standards but also aligns with legal requirements governing medical software in Germany and across Europe.
 
-### Regulatory Standards
-- **ISO 9241**: Ergonomics of human-system interaction.
-- **EN/IEC 62366**: Application of usability engineering to medical devices.
-- **IEC 61010-1-6**: Medical electrical equipment - General requirements for basic safety and essential performance - Collateral standard: Usability.
-- **IEC 62366 / 2021**: Harmonized with MDR and IVDR, covering design considerations and usage instructions.
 
 ### Post-Market Surveillance
 Data gathered by the manufacturer's post-market surveillance system is used to identify options to improve the usability, performance, and safety of the device. This continuous improvement ensures that usability engineering activities are maintained even after the product is on the market.
